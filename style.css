@@ -1,0 +1,33 @@
+:root{
+    --primary-color: rgb(103, 38, 38);
+}
+
+h1{
+    font-family: sans-serif;
+    color: var(--primary-color);
+}
+
+h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: var(--primary-color);
+}
+
+.main-menu li>a{
+    color: brown;
+    text-decoration: none;
+    background-color: beige;
+}
+
+.main-menu li>a:hover{
+    background-color: bisque;
+}
+
+li{
+    font-size: larger;
+    color: brown;
+}
+
+a:hover{
+    background-color: rgb(125, 125, 76);
+    
+}
