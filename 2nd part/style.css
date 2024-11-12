@@ -1,0 +1,248 @@
+:root{
+    --primary-color: rgb(103, 38, 38);
+}
+
+
+
+
+/* ------------ Generic rules ------------  */
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light grey for readability */
+    color: #333; /* General text color */
+}
+
+main {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    font-size: 1.2em;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow effect */
+}
+
+section, article {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: var(--primary-color);
+    border-bottom: 2px solid #ddd;
+}
+
+li{
+    color: var(--primary-color);
+}
+
+/* Video Styling */
+video {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ------------  ------------  */
+
+
+
+
+
+/* ------------ header ------------  */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.3em;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+/* ------------  ------------  */
+
+
+
+
+
+
+
+/* ------------ Subcategories ------------  */
+
+.categories h2, .categories h3{
+    color: var(--primary-color);
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    clear: left;
+}
+
+.categories ul {
+    font-size: 1.2em;
+}
+/* ------------  ------------  */
+
+
+
+
+
+
+/* ------------ item_details ------------  */
+
+.item_details h2, .item_details h3 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    clear: left;
+}
+/* ------------  ------------  */
+
+
+
+
+
+
+/* ------------ category_items ------------  */
+.category_items h3, .category_items h2{
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    clear: left;
+}
+/* ------------  ------------  */
+
+
+
+
+
+
+
+/* ------------ Indicative_content ------------  */
+
+.Indicative_content h2, .Indicative_content h3{
+    color: #333;
+    font-size: 1.2em;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    clear: left;
+}
+
+.Indicative_content figure{
+    float: left;    /* float images to the left*/
+    width: 250px;
+    
+}
+
+/* Back to table of contents link appears beneath of floating images and float left*/
+.Indicative_content a{
+    clear:left;
+    float: left;
+}
+/* ------------  ------------  */
+
+
+
+
+
+
+/* ------------ TOC ------------  */
+.toc{
+    width: auto;
+}
+/* ------------  ------------  */
+
+
+
+
+/* Link Styling with Pseudo-classes */
+a:link {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(31, 79, 143);
+}
+
+a:hover {
+    color: #064686;
+    text-decoration: underline;
+}
+
+a:active {
+    color: var(--primary-color);
+}
+
+
+
+
+/* Rating Styling */
+.checked {
+    color: #FFD700; /* Gold color for star rating */
+    font-size: 1.2em;
+}
+
+
+
+/* ------------ footer ------------  */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#footer_social a{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#footer_social img {
+    padding: 5px;
+    margin: 0;
+    width: 20px; /* Icon size for footer */
+    border: none;
+}
+/* ------------ footer (end) ------------  */
+
+

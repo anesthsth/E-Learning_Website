@@ -28,7 +28,7 @@
     </header>
 
     <main>
-        <section id="details">
+        <section class="item_details">
             <h2>Deep Learning with Python</h2>
             <img src="images/Deep Learning with Python.jfif" width="200px" height="300px">
             <!-- Add icon library -->
@@ -57,72 +57,31 @@
                 knowledge and hands-on skills to apply deep learning in your own projects.</p>
         </section>
 
-        <section id="table_contents">
-            <h3>Table of contents</h3>
-            <table id="table">
-                <tr>
-                    <thead>
-                        <th>No.</th>
-                        <th>Chapters</th>
-                        <th>Page</th>
-                    </thead>
-                </tr>
-                <tr>
-                    <th>1.</th>
-                    <th><a href="#chapter1"> What is deep learning</a></th>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <th>2.</th>
-                    <th><a href="#chapter2"> Before we begin: the mathematical building <br>blocks of neural networks</a></th>
-                    <td>25</td>
-                </tr>
-                <tr>
-                    <th>3.</th>
-                    <th><a href="#chapter3">Getting started with neural networks</a></th>
-                    <td>56</td>
-                </tr>
-                <tr>
-                    <th>4.</th>
-                    <th><a href="#chapter4">Fundamentals of machine learning</a></th>
-                    <td>93</td>
-                </tr>
-                <tr>
-                    <th>5.</th>
-                    <th><a href="#chapter5">Deep learning for computer vision</a></th>
-                    <td>118</td>
-                </tr>
-                <tr>
-                    <th>6.</th>
-                    <th><a href="#chapter6">Deep learning for text and sequences</a></th>
-                    <td>178</td>
-                </tr>
-                <tr>
-                    <th>7.</th>
-                    <th><a href="#chapter7">Advanced deep-learning best practices</a></th>
-                    <td>233</td>
-                </tr>
-                <tr>
-                    <th>8.</th>
-                    <th><a href="#chapter8">Generative deep learning</a></th>
-                    <td>269</td>
-                </tr>
-                <tr>
-                    <th>9.</th>
-                    <th><a href="#chapter9">Conclusions</a></th>
-                    <td>314</td>
-                </tr>
-            </table>
-        </section>
+        <h3 id="toc">Table of Contents</h3>
+            <ul class="toc">
+                <li><a href="#chapter1">Chapter 1: What is deep learning</a></li>
+                <li><a href="#chapter2">Chapter 2: Before we begin: the mathematical building blocks of neural networks</a></li>
+                <li><a href="#chapter3">Chapter 3: Getting started with neural networks</a></li>
+                <li><a href="#chapter4">Chapter 4: Fundamentals of machine learning</a></li>
+                <li><a href="#chapter5">Chapter 5: Deep learning for computer vision</a></li>
+                <li><a href="#chapter6">Chapter 6: Deep learning for text and sequences</a></li>
+                <li><a href="#chapter7">Chapter 7: Advanced deep-learning best practices</a></li>
+                <li><a href="#chapter8">Chapter 8: Generative deep learning</a></li>
+                <li><a href="#chapter9">Chapter 9: Conclusions</a></li>
+            </ul>
 
         <!-- <embed id="pdf" src="books/deeplearningwithpython.pdf" type="application/pdf" title="Deep learning with Python"
         width="800px" height="1000px"> -->
         
-        <section id="Indicative_content">
-            <h3>Indicative content of each chaper</h3>
+        <section class="Indicative_content">
+            <h3>Indicative content of each chapter</h3>
             <div id="chapter1">
-                <details open="true">
-                    <summary><strong>What is deep learning</strong></summary>
+
+                <h3><strong>1.  What is deep learning</strong></h3>
+                <figure>
+                    <img src="books/Deep Learning with Python/chapter1.jpg" alt="" >
+                    <figcaption> <em> 1.1. Artificial intelligence, machine learning, and deep learning</em></figcaption>
+                </figure>
                     <p>Artificial intelligence was born in the 1950s, when a handful of pioneers from the nascent field of computer 
                         science started asking whether computers could be made to “think”—a question whose ramifications we’re still
                         exploring today. A concise definition of the field would be as follows: the effort to automate intellectual tasks normally 
@@ -133,16 +92,17 @@
                         rules for manipulating knowledge. This approach is known as symbolic AI, and it was the dominant paradigm 
                         in AI from the 1950s to the late 1980s. It reached its peak popularity during the expert systems boom of the 1980s.</p>
                     
-                    <figure>
-                        <img src="books/Deep Learning with Python/chapter1.jpg" alt="" >
-                        <figcaption>Figure 1.1. Artificial intelligence, machine learning, and deep learning</figcaption>
-                    </figure>
-                    <a href="#table">Table of contents</a>
-                </details>
+                    
+                    <a href="#toc">Table of contents</a>
+                
             </div>
             <div id="chapter2">
-                <details open="true">
-                    <summary><strong>2.	Before we begin: the mathematical building blocks of neural networks</strong></summary>
+                
+                    <h3><strong>2.	Before we begin: the mathematical building blocks of neural networks</strong></h3>
+                    <figure>
+                        <img src="books/Deep Learning with Python/chapter2.jpg" alt="" >
+                        <figcaption>Figure 2.1. MNIST sample digits</figcaption>
+                    </figure>
                     <p>
                         The problem we’re trying to solve here is to classify grayscale images of handwritten digits (28 × 28 pixels) into their 10
                         categories (0 through 9). We’ll use the MNIST dataset, a classic in the machine-learning community, which has been around almost as
@@ -152,16 +112,17 @@
                         machine-learning practitioner, you’ll see MNIST come up over and over again,
                         in scientific papers, blog posts, and so on. You can see some MNIST samples in figure 2.1.
                     </p>
-                    <figure>
-                        <img src="books/Deep Learning with Python/chapter2.jpg" alt="" >
-                        <figcaption>Figure 2.1. MNIST sample digits</figcaption>
-                    </figure>
-                    <a href="#table">Table of contents</a>
-                </details>
+                    
+                    <a href="#toc">Table of contents</a>
+                
             </div>
             <div id="chapter3">
-                <details open="true">
-                    <summary><strong>3.	Getting started with neural networks</strong></summary>
+                
+                    <h3><strong>3.	Getting started with neural networks</strong></h3>
+                    <figure>
+                        <img src="books/Deep Learning with Python/chapter3.jpg" alt="" >
+                        <figcaption>Figure 3.1. Relationship between the network, layers, loss function, and optimizer</figcaption>
+                    </figure>
                     <p>As you saw in the previous chapters, training a neural network revolves around the following objects:
                         Layers, which are combined into a network (or model)
                         The input data and corresponding targets
@@ -171,16 +132,17 @@
                         maps the input data to predictions. The loss function then compares these predictions to the targets, producing a loss 
                         value: a measure of how well the network’s predictions match what was expected. The optimizer uses
                         this loss value to update the network’s weights.</p>
-                    <figure>
-                        <img src="books/Deep Learning with Python/chapter3.jpg" alt="" >
-                        <figcaption>Figure 3.1. Relationship between the network, layers, loss function, and optimizer</figcaption>
-                    </figure>
-                    <a href="#table">Table of contents</a>
-                </details>
+                    
+                    <a href="#toc">Table of contents</a>
+                
             </div>
             <div id="chapter4">
-                <details open="true">
-                    <summary><strong>4.	Fundamentals of machine learning</strong></summary>
+                
+                    <h3><strong>4.	Fundamentals of machine learning</strong></h3>
+                    <figure>
+                        <img src="books/Deep Learning with Python/chapter4.jpg" alt="" >
+                        <figcaption>Figure 4.2. Three-fold validation</figcaption>
+                    </figure>
                     <p>K-fold validation
                         With this approach, you split your data into K partitions of equal size. For each partition i,
                         train a model on the remaining K – 1 partitions, and evaluate it on partition i. Your final score is then the averages of 
@@ -188,16 +150,18 @@
                         your train-test split. Like hold-out validation, this method doesn’t exempt you from using a distinct validation set 
                         for model calibration.Schematically, K-fold cross-validation looks like 
                         figure 4.2. Listing 4.2 shows a simple implementation.</p>
-                    <figure>
-                        <img src="books/Deep Learning with Python/chapter4.jpg" alt="" >
-                        <figcaption>Figure 4.2. Three-fold validation</figcaption>
-                    </figure>
-                    <a href="#table">Table of contents</a>
-                </details>
+                    
+                    <a href="#toc">Table of contents</a>
+                
             </div>
             <div id="chapter5">
-                <details open="true">
-                    <summary><strong>5.	Deep learning for computer vision</strong></summary>
+                
+                    <h3><strong>5.	Deep learning for computer vision</strong></h3>
+                    <figure>
+                        <img src="books/Deep Learning with Python/chapter5.jpg" alt="" >
+                        <figcaption>Figure 5.2. The visual world forms a spatial hierarchy of visual modules: hyperlocal edges combine into local
+                                objects such as eyes or ears, which combine into high-level concepts such as “cat.”</figcaption>
+                    </figure>
                     <p>The patterns they learn are translation invariant. After learning a certain pattern in the lower-right corner of a picture,
                         a convnet can recognize it anywhere: for example, in the upper-left corner. A densely 
                         connected network would have to learn the pattern anew if it 
@@ -207,17 +171,17 @@
                         such as edges, a second convolution layer will learn larger patterns made of the features of the first layers,
                         and so on. This allows convnets to efficiently learn increasingly complex and abstract visual concepts 
                         (because the visual world is fundamentally spatially hierarchical).</p>
-                    <figure>
-                        <img src="books/Deep Learning with Python/chapter5.jpg" alt="" >
-                        <figcaption>Figure 5.2. The visual world forms a spatial hierarchy of visual modules: hyperlocal edges combine into local
-                                objects such as eyes or ears, which combine into high-level concepts such as “cat.”</figcaption>
-                    </figure>
-                    <a href="#table">Table of contents</a>
-                </details>
+                    
+                    <a href="#toc">Table of contents</a>
+                
             </div>
             <div id="chapter6">
-                <details open="true">
-                    <summary><strong>6.	Deep learning for text and sequences</strong></summary>
+                
+                    <h3><strong>6.	Deep learning for text and sequences</strong></h3>
+                    <figure>
+                        <img src="books/Deep Learning with Python/chapter6.jpg" alt="" >
+                        <figcaption>Figure 6.1. From text to tokens to vectors</figcaption>
+                    </figure>
                     <p>Text is one of the most widespread forms of sequence data. It can be understood as either a sequence of characters or a sequence of words,
                         but it’s most common to work at the level of words. The deep-learning sequence-processing models introduced in the following sections 
                         can use text to produce a basic form of natural-l-anguage understanding, sufficient for applications including document classification,
@@ -240,35 +204,37 @@
                         In this section, I’ll present two major ones: one-hot encoding of tokens, and token embedding (typically used exclusively for words, 
                         and called word embedding). The remainder of this section explains these techniques and shows how to use them to go from raw 
                         text to a Numpy tensor that you can send to a Keras network.</p>
-                    <figure>
-                        <img src="books/Deep Learning with Python/chapter6.jpg" alt="" >
-                        <figcaption>Figure 6.1. From text to tokens to vectors</figcaption>
-                    </figure>
-                    <a href="#table">Table of contents</a>
-                </details>
+                    
+                    <a href="#toc">Table of contents</a>
+                
             </div>
             <div id="chapter7">
-                <details open="true">
-                    <summary><strong>7.	Advanced deep-learning best practices</strong></summary>
-                    <p>Until now, all neural networks introduced in this book have been implemented using the Sequential model. 
-                        The Sequential model makes the assumption that 
-                        the network has exactly one input and exactly one output, and that it consists of a linear stack of layers (see figure 7.1).</p>
+                
+                    <h3><strong>7.	Advanced deep-learning best practices</strong></h3>
                     <figure>
                         <img src="books/Deep Learning with Python/chapter7.jpg" alt="" >
                         <figcaption>Figure 7.1. A sequential model: a linear stack of layers</figcaption>
                     </figure>
+                    <p>Until now, all neural networks introduced in this book have been implemented using the Sequential model. 
+                        The Sequential model makes the assumption that 
+                        the network has exactly one input and exactly one output, and that it consists of a linear stack of layers (see figure 7.1).</p>
+                    
                     <p>This is a commonly verified assumption; the configuration is so common that we’ve been able to cover many topics and practical applications
                         in these pages so far using only the Sequential model class. But this set of assumptions is too inflexible in a number of cases.
                         Some networks require several independent inputs, others require multiple 
                         outputs, and some networks have internal branching between layers that makes them look like graphs of layers rather than linear
                         stacks of layers.</p>
 
-                    <a href="#table">Table of contents</a>
-                </details>
+                    <a href="#toc">Table of contents</a>
+                
             </div>
             <div id="chapter8">
-                <details open="true">
-                    <summary><strong>8.	Generative deep learning</strong></summary>
+                
+                    <h3><strong>8.	Generative deep learning</strong></h3>
+                    <figure>
+                        <img src="books/Deep Learning with Python/chapter8.jpg" alt="" >
+                        <figcaption>Figure 8.1. The process of character-by-character text generation using a language model</figcaption>
+                    </figure>
                     <p>Once you have such a trained language model, you can sample from it (generate new sequences): you feed it an initial
                         string of text (called conditioning data), ask it to generate the next character or the next word
                         (you can even generate several tokens at once), add the generated output back to the input data, and repeat the process
@@ -279,16 +245,17 @@
                         over all possible characters: a probability distribution for the next character. This LSTM is called a character-level neural 
                         language model.</p>
                     
-                    <figure>
-                        <img src="books/Deep Learning with Python/chapter8.jpg" alt="" >
-                        <figcaption>Figure 8.1. The process of character-by-character text generation using a language model</figcaption>
-                    </figure>
-                    <a href="#table">Table of contents</a>
-                </details>
+                    
+                    <a href="#toc">Table of contents</a>
+               
             </div>
             <div id="chapter9">
-                <details open="true">
-                    <summary><strong>9.	Conclusions</strong></summary>
+                
+                    <h3><strong>9.	Conclusions</strong></h3>
+                    <figure>
+                        <img src="books/Deep Learning with Python/chapter9.jpg" alt="" >
+                        <figcaption>Figure 9.2. An adversarial example: imperceptible changes in an image can upend a model’s classification of the image.</figcaption>
+                    </figure>
                     <p>In particular, this is highlighted by adversarial examples, which are samples fed to a deep-learning network that are designed 
                         to trick the model into misclassifying them. You’re already aware that, for instance, it’s possible to do gradient ascent in
                         input space to generate inputs that maximize the activation of some convnet filter—this is the basis of the filter-visualization
@@ -297,15 +264,13 @@
                         to it a gibbon gradient, we can get a neural network to classify the panda as a gibbon (see figure 9.2). This
                         evidences both the brittleness of these models and the deep difference between their input-to-output mapping and our human perception.</p>
 
-                    <figure>
-                        <img src="books/Deep Learning with Python/chapter9.jpg" alt="" >
-                        <figcaption>Figure 9.2. An adversarial example: imperceptible changes in an image can upend a model’s classification of the image.</figcaption>
-                    </figure>
-                    <a href="#table">Table of contents</a>
-                </details>
+                    
+                    <a href="#toc">Table of contents</a>
+                
             </div>
         </section>
-
+    <!-- So the floating <a>, figure elements doesnt overflow the <main> element -->    
+    <div style="clear: both;"></div>
     </main>
 
     <footer>
