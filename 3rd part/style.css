@@ -13,6 +13,7 @@ body {
     padding: 0;
     background-color: #f4f4f9; /* Light grey for readability */
     color: #333; /* General text color */
+    margin-top: 0;
 }
 
 main {
@@ -22,6 +23,7 @@ main {
     font-size: 1.2em;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow effect */
+    margin-top: 7em;
 }
 
 section, article {
@@ -73,6 +75,12 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
+    display: block;
+    width: 100%;
+    position: fixed;
+    height: 5em;
+    top: 0;
+    z-index: 1;
 }
 
 header h1 {
@@ -86,14 +94,17 @@ header h1 {
 
 
 /* ------------ main-menu ------------  */
+
+
 #main-menu ul{
-    list-style-type: none;
+    list-style-type:none;
     padding: 0;
     display: flex;
     justify-content: center;
     gap: 20px;
     font-size: 1.3em;
-
+    flex-direction: row;
+    align-items: stretch;
 }
 
 
@@ -112,16 +123,20 @@ header h1 {
 
 .menu-list a:hover{
     
-    background-color: var(--primary-color);
+    background-color:  rgb(174, 159, 141);
     color: #333;
-    
+}
+
+.menu-list a:active{
+    box-shadow: 0 4px 8px rgb(174, 159, 141);
 }
 
 .menu-list li>a{
-    border: 2px solid var(--primary-color);
+    border: 2px solid rgb(174, 159, 141);
     border-radius: 4px;
-    color: var(--primary-color);
+    color: rgb(201, 197, 192);
     font-size: 1.2em;
+    padding: 3px;
     
 }
 /* ------------  ------------  */
@@ -209,8 +224,26 @@ header h1 {
 
 /* ------------ TOC ------------  */
 .toc{
-    width: auto;
+    display: flex;
+    padding-left: 0;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 1.3em;
+    flex-direction: column;
+    flex-wrap:none;
+    align-items: flex-start;
+    list-style: none;
+    font-size: 0.8em;
 }
+
+.toc li>a{
+    color: #848475;
+}
+
+.toc a:hover{
+    
+}
+
 /* ------------  ------------  */
 
 
@@ -254,6 +287,7 @@ footer {
     padding: 15px;
     text-align: center;
     font-size: 0.9em;
+    
 }
 
 #footer_social a{
