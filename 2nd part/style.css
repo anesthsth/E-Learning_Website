@@ -101,6 +101,23 @@ header nav a:hover {
 /* ------------  ------------  */
 
 
+/* ------------ menu-list ------------  */
+
+.menu-list a:hover{
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #333;
+    
+}
+
+.menu-list li>a{
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    color: var(--primary-color);
+    
+}
+
+/* ------------  ------------  */
 
 
 
