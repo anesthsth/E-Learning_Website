@@ -13,17 +13,28 @@ body {
     padding: 0;
     background-color: #f4f4f9; /* Light grey for readability */
     color: #333; /* General text color */
-    margin-top: 0;
+    display: grid;
+    grid:"h h h"
+        "a b c"
+        "f f f";
+    grid-template-columns: 15% 1fr 20%;
+    header { grid-area: h; }
+    nav { grid-area: a; }
+    main { grid-area: b; }
+    aside { grid-area: c; }
+    footer { grid-area: f; }
+    
 }
 
 main {
     padding: 20px;
     margin: 20px auto;
-    max-width: 900px;
+    max-width: auto;
     font-size: 1.2em;
+    width: 900px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow effect */
-    margin-top: 7em;
+    margin-top: 1em;
 }
 
 section, article {
@@ -41,6 +52,10 @@ h2{
     font-family:Georgia, 'Times New Roman', Times, serif;
     color: var(--primary-color);
     border-bottom: 2px solid #ddd;
+}
+
+h3{
+    border-bottom: 2px solid #ddd
 }
 
 li{
@@ -77,7 +92,7 @@ header {
     text-align: center;
     display: block;
     width: 100%;
-    position: fixed;
+    position: sticky;
     height: 5em;
     top: 0;
     z-index: 1;
@@ -119,6 +134,7 @@ header h1 {
 
 .menu-list{
     font-weight: bold;
+    list-style-type: none;
 }
 
 .menu-list a:hover{
@@ -141,6 +157,37 @@ header h1 {
 }
 /* ------------  ------------  */
 
+
+/* ------------ menu-list ------------  */
+#side-nav{
+    background-color:#fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1)
+    
+}
+
+#side-nav h3{
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#side-nav ul{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    padding-left: 5px;
+}
+
+#side-nav a{
+    display: block;
+    font-size: 1.2em;
+    color: rgb(94, 94, 94);
+    text-decoration: none;
+    
+}
+#side-nav a:hover{
+    background-color: rgb(108, 55, 55);
+    color: #ddd;
+}
 
 
 
@@ -226,7 +273,6 @@ header h1 {
 .toc{
     display: flex;
     padding-left: 0;
-    justify-content: flex-start;
     gap: 10px;
     font-size: 1.3em;
     flex-direction: column;
@@ -238,10 +284,6 @@ header h1 {
 
 .toc li>a{
     color: #848475;
-}
-
-.toc a:hover{
-    
 }
 
 /* ------------  ------------  */
