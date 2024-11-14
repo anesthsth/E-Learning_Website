@@ -79,32 +79,39 @@ header h1 {
     font-size: 2em;
     margin: 0;
 }
+/* ------------  ------------  */
 
-header nav ul {
+
+
+
+
+/* ------------ main-menu ------------  */
+#main-menu ul{
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: center;
     gap: 20px;
     font-size: 1.3em;
+
 }
 
-header nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
 
-header nav a:hover {
-    text-decoration: underline;
-}
 /* ------------  ------------  */
+
+
+
+
 
 
 /* ------------ menu-list ------------  */
 
+.menu-list{
+    font-weight: bold;
+}
+
 .menu-list a:hover{
-    text-decoration: none;
+    
     background-color: var(--primary-color);
     color: #333;
     
@@ -114,9 +121,9 @@ header nav a:hover {
     border: 2px solid var(--primary-color);
     border-radius: 4px;
     color: var(--primary-color);
+    font-size: 1.2em;
     
 }
-
 /* ------------  ------------  */
 
 
