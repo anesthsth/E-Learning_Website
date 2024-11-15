@@ -17,7 +17,7 @@ body {
     grid:"h h h"
         "a b c"
         "f f f";
-    grid-template-columns: 15% 1fr 20%;
+    grid-template-columns: 15% 1fr 15%;
     header { grid-area: h; }
     nav { grid-area: a; }
     main { grid-area: b; }
@@ -91,7 +91,7 @@ header {
     padding: 20px;
     text-align: center;
     display: block;
-    width: 100%;
+    width: auto;
     position: sticky;
     height: 5em;
     top: 0;
@@ -151,18 +151,19 @@ header h1 {
     border: 2px solid rgb(174, 159, 141);
     border-radius: 4px;
     color: rgb(201, 197, 192);
-    font-size: 1.2em;
     padding: 3px;
     
 }
 /* ------------  ------------  */
 
 
-/* ------------ menu-list ------------  */
+/* ------------ side-nav ------------  */
 #side-nav{
     background-color:#fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1)
-    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #side-nav h3{
@@ -182,14 +183,57 @@ header h1 {
     font-size: 1.2em;
     color: rgb(94, 94, 94);
     text-decoration: none;
+    border-bottom: 2px solid #ddd;
+    padding-left: 0.5em;
     
 }
 #side-nav a:hover{
     background-color: rgb(108, 55, 55);
     color: #ddd;
 }
+/* ------------  ------------  */
+
+/* ------------ aside ------------  */
+
+aside {
+    background-color:#fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+aside h3{
+    color: var(--primary-color);
+}
+
+aside a{
+    display: block; 
+    
+}
+
+aside a:link{
+    color: rgb(108, 73, 73);
+    text-decoration: none;
+}
+
+aside a:visited{
+    color: rgb(108, 73, 73);
+}
+
+aside a:hover{
+    background-color: rgb(108, 55, 55);
+    color: #ddd;
+}
+
+aside a>img{
+    display: inline-block;
+}
 
 
+
+/* ------------  ------------  */
 
 
 /* ------------ Subcategories ------------  */
@@ -199,11 +243,26 @@ header h1 {
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
     clear: left;
+    text-align: center;
 }
 
 .categories ul {
     font-size: 1.2em;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    align-items: flex-start;
 }
+
+.categories li>a{
+    color: #696969;
+}
+.categories li>a:hover{
+    background-color: var(--primary-color);
+    color: #ddd;
+    border-color: #ddd;
+}
+
 /* ------------  ------------  */
 
 
