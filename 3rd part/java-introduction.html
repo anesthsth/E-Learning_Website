@@ -14,7 +14,7 @@
     <header>
         <h1>E-Learning Platform</h1>
         <nav id="main-menu">
-            <ul class="menu-list flex-container">
+            <ul class="menu-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="categories.html">Categories</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -22,7 +22,7 @@
         </nav>
     </header>
     
-    <main>
+    <main class="flex-main">
         <!-- Lecture Details (NOT in Flexbox) -->
         <section class="item_details">
             <h2>Lecture Details</h2>
@@ -41,14 +41,12 @@
         </section>
 
         <!-- Indicative Content (IN Flexbox) -->
-        <section class="Indicative_content flex-container">
-            <article id="part1" class="flex-item">
+        <section class="Indicative_content grid-container">
+            <article id="part1" class="grid-item flex-main">
                 <h2>Part 1: Java Basics</h2>
                 <p>This section introduces the basic syntax and data types in Java.</p>
                 <!-- Embedded YouTube Video -->
                 <iframe 
-                    width="150" 
-                    height="100" 
                     src="https://www.youtube.com/embed/IUqKuGNasdM" 
                     title="Java Basics Video" 
                     frameborder="0" 
@@ -58,13 +56,11 @@
                 <p><a href="#toc">Back to Table of Contents</a></p>
             </article>
 
-            <article id="part2" class="flex-item">
+            <article id="part2" class="grid-item flex-main">
                 <h2>Part 2: Object-Oriented Programming</h2>
                 <p>This section covers the principles of object-oriented programming in Java.</p>
                 <!-- Embedded YouTube Video -->
                 <iframe 
-                    width="150" 
-                    height="100" 
                     src="https://www.youtube.com/embed/8yjkWGRlUmY"
                     title="Object-Oriented Programming Video" 
                     frameborder="0" 
@@ -74,13 +70,11 @@
                 <p><a href="#toc">Back to Table of Contents</a></p>
             </article>
 
-            <article id="part3" class="flex-item">
+            <article id="part3" class="grid-item flex-main">
                 <h2>Part 3: Exception Handling</h2>
                 <p>This section discusses how to handle exceptions in Java applications.</p>
                 <!-- Embedded YouTube Video -->
                 <iframe 
-                    width="150" 
-                    height="100" 
                     src="https://www.youtube.com/embed/1XAfapkBQjk"
                     title="Exception Handling Video" 
                     frameborder="0" 

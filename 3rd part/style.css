@@ -35,27 +35,31 @@ main {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow effect */
     margin-top: 1em;
+    
 }
 
-section, article {
-    margin-top: 20px;
-    margin-bottom: 20px;
+section, article, div {
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--primary-color);
     text-decoration: underline;
+    text-align: center;
 }
 
 h2{
     font-family:Georgia, 'Times New Roman', Times, serif;
     color: var(--primary-color);
     border-bottom: 2px solid #ddd;
+    text-align: center;
 }
 
 h3{
-    border-bottom: 2px solid #ddd
+    border-bottom: 2px solid #ddd;
+    text-align: center;
 }
 
 li{
@@ -233,6 +237,32 @@ aside a>img{
 /* ------------  ------------  */
 
 
+
+/* ------------ grid-container ------------  */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 5px;
+    grid-auto-rows: minmax(200px, auto);
+    grid-auto-columns: minmax(500px,auto);
+}
+
+.grid-item{
+    padding: 20px;
+    border: 2px solid #ddd;
+}
+
+.grid-item:hover{
+    transform: translateY(-10px); /* Lift box slightly */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+
+
+/* ------------  ------------  */
+
+
 /* ------------ Subcategories ------------  */
 
 .categories h2, .categories h3{
@@ -284,10 +314,18 @@ aside a>img{
 
 /* ------------ category_items ------------  */
 .category_items h3, .category_items h2{
-    color: #333;
+    color: var(--primary-color);
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
     clear: left;
+}
+
+.category_items img{
+    
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 300px; 
 }
 /* ------------  ------------  */
 
@@ -318,6 +356,12 @@ aside a>img{
     clear:left;
     float: left;
 }
+
+.Indicative_content iframe{
+    width: 100%;
+    height: 300px;
+}
+
 /* ------------  ------------  */
 
 
@@ -403,6 +447,22 @@ footer {
 
 
 
+
+.flex-main{
+
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+    flex-direction: column;
+    flex-wrap:none;
+    align-items: center;
+}
+
+.flex-main h3, h2{
+    width: 100%;  
+}
+
+
 /* General Flexbox Container */
 .flex-container {
     display: flex;
@@ -417,9 +477,10 @@ footer {
 /* Flex Items */
 .flex-item {
     flex: 1 1 calc(23% - 20px); /* Smaller size to fit 4 items in a row */
-    max-width: calc(23% - 20px); /* Prevent overflowing */
+    max-width: calc(30% - 20px); /* Prevent overflowing */
     background-color: #fff;
     border: 1px solid #ccc;
+    flex-direction: row;
     border-radius: 5px;
     text-align: center;
     padding: 15px;
@@ -433,3 +494,4 @@ footer {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
 }
 
+      
