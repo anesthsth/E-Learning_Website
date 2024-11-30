@@ -1,68 +1,90 @@
-:root{
+:root {
     --primary-color: rgb(103, 38, 38);
 }
 
+/* ------------ Generic rules ------------ */
 
-
-
-/* ------------ Generic rules ------------  */
 body {
-    
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f9; /* Light grey for readability */
     color: #333; /* General text color */
     display: grid;
-    grid:"h h h"
-        "a b c"
-        "f f f";
-    grid-template-columns: 15% 1fr 15%;
-    header { grid-area: h; }
-    nav { grid-area: a; }
-    main { grid-area: b; }
-    aside { grid-area: c; }
-    footer { grid-area: f; }
-    
+    grid-template-areas:
+        "h"
+        "a"
+        "b"
+        "c"
+        "f";
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    grid-template-rows: auto;
 }
 
+/* Assign grid areas */
+header { grid-area: h; }
+nav { grid-area: a; }
+main { grid-area: b; }
+aside { grid-area: c; }
+footer { grid-area: f; }
+
+/* Tablets */
+@media (min-width: 768px) {
+    body {
+        grid-template-areas:
+            "h h h"
+            "a b c"
+            "f f f";
+        grid-template-columns: 15% 1fr 15%; /* Two columns */
+    }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+    body {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for desktop */
+    }
+}
+
+/* Main content */
 main {
     padding: 20px;
     margin: 20px auto;
-    max-width: auto;
+    width: 100%; /* Adjust to full width for smaller screens */
+    max-width: 900px; /* Restrict width for larger screens */
     font-size: 1.2em;
-    width: 900px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
     margin-top: 1em;
-    
 }
 
+/* Section, article, div spacing */
 section, article, div {
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
-h1{
+/* Heading Styles */
+h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--primary-color);
     text-decoration: underline;
     text-align: center;
 }
 
-h2{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--primary-color);
     border-bottom: 2px solid #ddd;
     text-align: center;
 }
 
-h3{
+h3 {
     border-bottom: 2px solid #ddd;
     text-align: center;
 }
 
-li{
+li {
     color: var(--primary-color);
 }
 
@@ -73,63 +95,78 @@ video {
     max-width: 100%;
 }
 
-/* Image Styling */
+/* Responsive Image Styling */
 img {
     max-width: 100%;
+    height: auto;
     border: 1px solid #ccc;
     margin: 5px;
     padding: 5px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* ------------  ------------  */
+.responsive-img {
+    content: url("image-small.jpg");
+}
 
+@media (min-width: 768px) {
+    .responsive-img {
+        content: url("image-medium.jpg");
+    }
+}
 
+@media (min-width: 1024px) {
+    .responsive-img {
+        content: url("image-large.jpg");
+    }
+}
 
-/* ------------ header ------------  */
+/* ------------ Header ------------ */
 header {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
-    display: block;
-    width: auto;
     position: sticky;
-    height: 5em;
     top: 0;
     z-index: 1;
 }
 
-header h1 {
-    font-size: 2em;
-    margin: 0;
-}
-/* ------------  ------------  */
-
-
-
-
-/* ------------ main-menu ------------  */
-
-
-#main-menu ul{
-    list-style-type:none;
+/* Main Menu */
+#main-menu ul {
+    list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: center;
     gap: 20px;
-    font-size: 1.3em;
-    flex-direction: row;
-    align-items: stretch;
+    flex-direction: column; /* Stack items for mobile */
 }
 
+@media (min-width: 768px) {
+    #main-menu ul {
+        flex-direction: row; /* Inline items for larger screens */
+    }
+}
 
-/* ------------  ------------  */
+/* ------------ Grid Container ------------ */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single-column for mobile */
+    gap: 5px;
+    grid-auto-rows: minmax(200px, auto);
+}
 
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    }
+}
 
-
-
-
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for desktops */
+    }
+}
 
 /* ------------ menu-list ------------  */
 
@@ -157,43 +194,51 @@ header h1 {
 }
 /* ------------  ------------  */
 
-
-/* ------------ side-nav ------------  */
-#side-nav{
-    background-color:#fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-top: 1em;
-    margin-top: 20px;
-    margin-bottom: 20px;
+/* Grid Item Hover Effect */
+.grid-item {
+    padding: 20px;
+    border: 2px solid #ddd;
 }
 
-#side-nav h3{
+.grid-item:hover {
+    transform: translateY(-10px); /* Lift box slightly */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Sidebar Navigation */
+#side-nav {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#side-nav h3 {
     text-align: center;
     color: var(--primary-color);
 }
 
-#side-nav ul{
+#side-nav ul {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     gap: 10px;
     padding-left: 5px;
 }
 
-#side-nav a{
+#side-nav a {
     display: block;
     font-size: 1.2em;
     color: rgb(94, 94, 94);
     text-decoration: none;
     border-bottom: 2px solid #ddd;
     padding-left: 0.5em;
-    
 }
-#side-nav a:hover{
+
+#side-nav a:hover {
     background-color: rgb(108, 55, 55);
     color: #ddd;
 }
-/* ------------  ------------  */
-
 /* ------------ aside ------------  */
 
 aside {
@@ -235,34 +280,6 @@ aside a>img{
 
 
 /* ------------  ------------  */
-
-
-
-/* ------------ grid-container ------------  */
-
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 5px;
-    grid-auto-rows: minmax(200px, auto);
-    grid-auto-columns: minmax(500px,auto);
-}
-
-.grid-item{
-    padding: 20px;
-    border: 2px solid #ddd;
-}
-
-.grid-item:hover{
-    transform: translateY(-10px); /* Lift box slightly */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
-}
-
-
-
-/* ------------  ------------  */
-
-
 /* ------------ Subcategories ------------  */
 
 .categories h2, .categories h3{
@@ -291,10 +308,6 @@ aside a>img{
 }
 
 /* ------------  ------------  */
-
-
-
-
 
 
 /* ------------ item_details ------------  */
@@ -418,7 +431,6 @@ a:active {
     color: #FFD700; /* Gold color for star rating */
     font-size: 1.2em;
 }
-
 
 
 /* ------------ footer ------------  */

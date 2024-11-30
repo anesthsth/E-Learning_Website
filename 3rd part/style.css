@@ -3,6 +3,7 @@
 }
 
 /* ------------ Generic rules ------------ */
+@media (min-width: 600px){
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -19,7 +20,7 @@ body {
     grid-template-columns: 1fr; /* Single column layout for mobile */
     grid-template-rows: auto;
 }
-
+}
 /* Assign grid areas */
 header { grid-area: h; }
 nav { grid-area: a; }
@@ -227,3 +228,6 @@ footer {
         font-size: 1em; /* Adjust font size for mobile */
     }
 }
+
+
+
