@@ -32,17 +32,22 @@ footer { grid-area: f; }
 @media (min-width: 768px) {
     body {
         grid-template-areas:
-            "h h h"
-            "a b c"
-            "f f f";
-        grid-template-columns: 15% 1fr 15%; /* Two columns */
+            "h h"
+            "a b"
+            "c b"
+            "f f";
+        grid-template-columns: 25% 1fr; /* Two columns */
     }
 }
 
 /* Desktops */
 @media (min-width: 1024px) {
     body {
-        grid-template-columns: repeat(3, 1fr); /* Three columns for desktop */
+        grid-template-areas:
+            "h h h"
+            "a b c"
+            "f f f";
+        grid-template-columns: 15% 1fr 15%; /* Two columns */
     }
 }
 
@@ -156,15 +161,9 @@ header {
     grid-auto-rows: minmax(200px, auto);
 }
 
-@media (min-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
-    }
-}
-
 @media (min-width: 1024px) {
     .grid-container {
-        grid-template-columns: repeat(3, 1fr); /* Three columns for desktops */
+        grid-template-columns: repeat(2, 1fr); /* Two columns for desktop */
     }
 }
 
