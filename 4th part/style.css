@@ -55,7 +55,7 @@ footer { grid-area: f; }
 main {
     padding: 20px;
     margin: 20px auto;
-    width: 100%; /* Adjust to full width for smaller screens */
+    width: 90%; /* Adjust to full width for smaller screens */
     max-width: 900px; /* Restrict width for larger screens */
     font-size: 1.2em;
     background-color: #fff;
@@ -102,7 +102,7 @@ video {
 
 /* Responsive Image Styling */
 img {
-    max-width: 100%;
+    max-width: 100%;    
     height: auto;
     border: 1px solid #ccc;
     margin: 5px;
@@ -126,16 +126,33 @@ img {
     }
 }
 
-/* ------------ Header ------------ */
+/* ------------ header ------------  */
 header {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
+    display: block;
+    width: auto;
     position: sticky;
+    height: 5em;
     top: 0;
     z-index: 1;
 }
+
+@media (max-width: 380px){
+    header{
+        height: 8em;
+    }
+}
+
+
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+/* ------------  ------------  */
 
 /* Main Menu */
 #main-menu ul {
@@ -144,7 +161,8 @@ header {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-direction: column; /* Stack items for mobile */
+    font-size: 1.3em;
+    flex-direction: row; /* Stack items for mobile */
 }
 
 @media (min-width: 768px) {
@@ -185,10 +203,10 @@ header {
 }
 
 .menu-list li>a{
-    border: 2px solid rgb(174, 159, 141);
+    border-bottom: 2px solid rgb(174, 159, 141);
     border-radius: 4px;
     color: rgb(201, 197, 192);
-    padding: 3px;
+    padding: 0px;
     
 }
 /* ------------  ------------  */
@@ -210,7 +228,7 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 10px;
+    
 }
 
 #side-nav h3 {
