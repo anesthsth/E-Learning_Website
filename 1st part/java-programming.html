@@ -12,8 +12,8 @@
 <body>
     <header>
         <h1>E-Learning Platform</h1>
-        <nav>
-            <ul>
+        <nav id="main-menu">
+            <ul class="menu-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="categories.html">Categories</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -21,25 +21,148 @@
         </nav>
     </header>
     
-    <main>
-        <section class="category_items">
+    <main class="flex-main">
+        <div class="category_items">
             <h2>Books and Lectures</h2>
-            <ul>
-                <li>
-                    <h3>Effective Java</h3>
-                    <p>By Joshua Bloch. Covers Java best practices.</p>
-                </li>
-                <li>
-                    <h3>Java Concurrency in Practice</h3>
-                    <p>By Brian Goetz. Focuses on multithreading and concurrency in Java.</p>
-                </li>
-                <li>
-                    <h3><a href="java-introduction.html">Java Programming: Introduction Lecture</a></h3>
-                    <p>Recorded lecture covering the basics of Java programming.</p>
-                </li>
-            </ul>
-        </section>
+            <section class="grid-container">
+                
+                <div class="grid-item">
+                    <h3 ><a href="#">
+                        Effective Java</a></h3>
+                        
+                        <img src="images/Effective Java-HR.jpg" width="200px" height="300px" alt="Responsive image">
+                        
+                    <h3>About the book</h3>
+                    <p> In this new edition of Effective Java, Bloch explores new design patterns and language idioms that have been introduced 
+                        since the second edition was released in 2008 shortly after Java SE6, including Lambda, streams, generics and collections, 
+                        as well as selected Java 9 features. <br><br>
+                        click <a href="https://www.oreilly.com/library/view/effective-java-3rd/9780134686097/">here</a> for official book page.
+                    </p>
+                    <h3>Authors</h3>
+                    <ul>
+                        <li><strong> Joshua Bloch</strong></li>
+                    </ul>
+                    
+                </div>
+
+
+
+
+                <div class="grid-item">
+                    <h3 ><a href="#">
+                        Java Concurrency In Practice</a></h3>
+                        <img src="images/Java Concurrency In Practice-HR.jpg" width="200px" height="300px" alt="Responsive image">
+                    <h3>About the book</h3>
+                    <p> This book covers:
+                    
+                        1)Basic concepts of concurrency and thread safety
+                        2)Techniques for building and composing thread-safe classes
+                        3)Using the concurrency building blocks in java.util.concurrent
+                        4)Performance optimization dos and don'ts
+                        5)Testing concurrent programs
+                        6)Advanced topics such as atomic variables, nonblocking algorithms, and the Java Memory Model
+                         <br><br>
+                        click <a href="https://jcip.net/">here</a> for official book page.
+                    </p>
+                    <h3>Authors</h3>
+                    <ul>
+                        <li><strong>Brian Goetz</strong></li>
+                        <li><strong>Tim Peierls</strong></li>
+                        <li><strong>Joshua Bloch</strong></li>
+                    </ul>
+                </div>
+
+
+
+                <div class="grid-item">
+                    <h3 ><a href="#">
+                        Java All-in-One For Dummies</a></h3>
+                        <img src="images/Java All-in-One For Dummies-HR.jpg" width="200px" height="300px" alt="Responsive image">
+                    <h3>About the book</h3>
+                    <p> With Java All-in-One For Dummies, you get 8 books in one, for the most well-rounded Java knowledge on 
+                        the market. Updated for Java 19, this book includes all the major changes 
+                        to the programming language, so you won’t fall behind. 
+                         <br><br>
+                        click <a href="https://www.amazon.com/Java-All-One-Dummies-Doug/dp/1119986648/ref=zg_bs_g_3608_d_sccl_4/133-4079251-9829112?psc=1">here</a> for official book page.
+                    </p>
+                    <h3>Authors</h3>
+                    <ul>
+                        <li><strong> Doug Lowe</strong></li>
+                        
+                    </ul>
+                    
+                </div>
+
+
+
+
+
+                <div class="grid-item">
+                    <h3 ><a href="java-introduction.html">
+                        Java: Complete Placement Course </a></h3>
+                        <img src="images/java lecture-HR.jpg" width="300px" height="200px" alt="Responsive image">
+                    <h3>About the course</h3>
+                    <p>  Complete java course for begginers and advanced programmers that covers 
+                        every topic in Java and modern Object oriented programming.
+                    
+                         <br><br>
+                        click <a href="https://www.youtube.com/watch?v=yRpLlJmRo2w&ab_channel=ApnaCollege">here</a> for official tutorial page.
+                    </p>
+                    <h3>Authors</h3>
+                    <ul>
+                        <li><strong> Apna College</strong></li>
+                        
+                    </ul>
+                    
+                </div>
+
+
+
+                <div class="grid-item">
+                    <h3 ><a href="#">
+                        Java Programming Training: For Begginers </a></h3>
+                        <img src="images/java programming training-HR.jpg" width="300px" height="200px" alt="Responsive image">
+                    <h3>About the course</h3>
+                    <p>  Begginer friendly course that covers the basics of JAVA and some advanced topics on OOP
+                    
+                         <br><br>
+                        click <a href="https://www.vinsys.com/blog/java-programming-corporate-training">here</a> for official tutorial page.
+                    </p>
+                    <h3>Authors</h3>
+                    <ul>
+                        <li><strong> Vinsys</strong></li>
+                        
+                    </ul>
+                    
+                </div>
+
+
+
+                <div class="grid-item">
+                    <h3 ><a href="#">
+                        Java Programming for Beginners – Full Course </a></h3>
+                        <img src="images/java programming course-HR.jpg" width="300px" height="200px" alt="Responsive image">
+                    <h3>About the course</h3>
+                    <p>  Learn the Java programming language in this complete beginner's course. 
+                        You will learn all the main features of Java (version 17) and how to use Java for your own projects. 
+                         <br><br>
+                        click <a href="https://www.youtube.com/watch?v=A74TOX803D0&ab_channel=freeCodeCamp.org">here</a> for official tutorial page.
+                    </p>
+                    <h3>Authors</h3>
+                    <ul>
+                        <li><strong> Free Code Camp</strong></li>
+                        
+                    </ul>
+                    
+                </div>
+
+
+
+            </section>
+        </div>
     </main>
+
+
 
     <footer>
         <p>Contact us at: info@eduplatform.com</p>

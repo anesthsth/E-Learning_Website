@@ -108,20 +108,24 @@ header h1 {
 
 .menu-list{
     font-weight: bold;
+    list-style-type: none;
 }
 
 .menu-list a:hover{
     
-    background-color: var(--primary-color);
+    background-color:  rgb(174, 159, 141);
     color: #333;
-    
+}
+
+.menu-list a:active{
+    box-shadow: 0 4px 8px rgb(174, 159, 141);
 }
 
 .menu-list li>a{
-    border: 2px solid var(--primary-color);
+    border: 2px solid rgb(174, 159, 141);
     border-radius: 4px;
-    color: var(--primary-color);
-    font-size: 1.2em;
+    color: rgb(201, 197, 192);
+    padding: 3px;
     
 }
 /* ------------  ------------  */
@@ -209,7 +213,19 @@ header h1 {
 
 /* ------------ TOC ------------  */
 .toc{
-    width: auto;
+    display: flex;
+    padding-left: 0;
+    gap: 10px;
+    font-size: 1.3em;
+    flex-direction: column;
+    flex-wrap:none;
+    align-items: flex-start;
+    list-style: none;
+    font-size: 0.8em;
+}
+
+.toc li>a{
+    color: #848475;
 }
 /* ------------  ------------  */
 
