@@ -569,6 +569,15 @@ input, select, textarea, button {
     width: 100%;
 }
 
+input[type="checkbox"] {
+    accent-color: #007bff; 
+    width: 20px;          
+    height: 20px;
+    cursor: pointer; 
+    display: inline-block; 
+        
+}
+
 button {
     background-color: var(--primary-color);
     color: #fff;
