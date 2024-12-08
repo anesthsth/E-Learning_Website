@@ -18,6 +18,7 @@ body {
         "c"
         "f";
     grid-template-columns: 1fr; /* Single column layout for mobile */
+    min-height: 100vh; /* Make the grid span the full viewport height */
     grid-template-rows: auto;
 }
 
