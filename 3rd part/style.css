@@ -27,6 +27,7 @@ body {
 }
 
 main {
+    font-family: openSans;
     padding: 20px;
     margin: 20px auto;
     max-width: auto;
@@ -134,6 +135,7 @@ header h1 {
 /* ------------ menu-list ------------  */
 
 .menu-list{
+    
     font-weight: bold;
     list-style-type: none;
 }
@@ -492,6 +494,11 @@ footer {
 .flex-item:hover {
     transform: translateY(-10px); /* Lift box slightly */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+@font-face {
+    font-family: openSans;
+    src: url(fonts/OpenSans-Medium.ttf);
 }
 
       

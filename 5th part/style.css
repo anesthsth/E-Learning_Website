@@ -55,6 +55,7 @@ footer { grid-area: f; }
 
 /* Main content */
 main {
+    font-family: openSans;
     padding: 20px;
     margin: 20px auto;
     width: 90%; /* Adjust to full width for smaller screens */
@@ -583,4 +584,10 @@ button {
     color: #fff;
     cursor: pointer;
     font-weight: bold;
+}
+
+
+@font-face {
+    font-family: openSans;
+    src: url(fonts/OpenSans-Medium.ttf);
 }
