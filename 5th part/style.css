@@ -8,8 +8,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9; /* Light grey for readability */
-    color: #333; /* General text color */
+    background-color: #f4f4f9; 
+    color: #333; 
     display: grid;
     grid-template-areas:
         "h"
@@ -64,6 +64,7 @@ main {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
     margin-top: 1em;
+    
 }
 
 /* Section, article, div spacing */
@@ -535,7 +536,7 @@ footer {
 
 
 
-/*registration*/
+/*Registration Form*/
 form {
     display: flex;
     flex-direction: column;
