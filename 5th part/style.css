@@ -20,6 +20,7 @@ body {
     grid-template-columns: 1fr; /* Single column layout for mobile */
     min-height: 100vh; /* Make the grid span the full viewport height */
     grid-template-rows: auto;
+    
 }
 
 
@@ -51,6 +52,7 @@ footer { grid-area: f; }
             "a b c"
             "f f f";
         grid-template-columns: 15% 1fr 15%; /* Two columns */
+        min-height: 100vh;
     }
 }
 
@@ -60,7 +62,7 @@ main {
     padding: 20px;
     margin: 20px auto;
     width: 90%; /* Adjust to full width for smaller screens */
-    max-width: 900px; /* Restrict width for larger screens */
+    max-width: 1200px; /* Restrict width for larger screens */
     font-size: 1.2em;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
@@ -115,21 +117,7 @@ img {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.responsive-img {
-    content: url("image-small.jpg");
-}
 
-@media (min-width: 768px) {
-    .responsive-img {
-        content: url("image-medium.jpg");
-    }
-}
-
-@media (min-width: 1024px) {
-    .responsive-img {
-        content: url("image-large.jpg");
-    }
-}
 
 /* ------------ header ------------  */
 header {
@@ -143,9 +131,17 @@ header {
     height: 5em;
     top: 0;
     z-index: 1;
+    
 }
 
-@media (max-width: 380px){
+@media (max-width: 381px){
+    header{
+        height: 10em;
+        
+    }
+}
+
+@media (min-width:380px) and (max-width: 440px){
     header{
         height: 8em;
     }
@@ -156,6 +152,7 @@ header {
 header h1 {
     font-size: 2em;
     margin: 0;
+    
 }
 /* ------------  ------------  */
 
@@ -168,6 +165,7 @@ header h1 {
     gap: 20px;
     font-size: 1.3em;
     flex-direction: row; /* Stack items for mobile */
+    flex-wrap: wrap;
 }
 
 @media (min-width: 768px) {
@@ -179,7 +177,7 @@ header h1 {
 /* ------------ Grid Container ------------ */
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr; /* Single-column for mobile */
+    grid-template-columns: 1fr; /* Single-column for mobiles and tablets*/
     gap: 5px;
     grid-auto-rows: minmax(200px, auto);
 }
@@ -297,7 +295,8 @@ aside a:hover{
 
 aside img {
     height: 12em;
-    max-width: 100%;
+    max-width: 90%;
+    margin: 0;
 }
 
 
